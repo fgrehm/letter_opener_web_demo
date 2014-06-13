@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>LetterOpenerWebDemo</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>LetterOpenerWeb Demo</title>
+    <%= stylesheet_link_tag "letter_opener_web/bootstrap.min" %>
+    <style>
+      body {
+        padding-top: 20px;
+      }
 
-<%= yield %>
+      .alert {
+        margin-top: 20px;
+      }
 
-</body>
+      h1, .footer {
+        text-align: center;
+      }
+
+      .icon-white {
+        background-image: url(<%=asset_path "letter_opener_web/glyphicons-halflings-white.png"%>);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>

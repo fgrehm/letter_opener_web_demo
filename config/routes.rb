@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  root to: 'contacts#new'
+  post '/' => 'contacts#create'
+  mount LetterOpenerWeb::Engine, at: "/inbox"
 end
