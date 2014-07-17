@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/fgrehm/letter_opener_web.git
-  revision: 4a21dd12bdb5ea760ae66095f855480f2f33cbe6
-  specs:
-    letter_opener_web (1.2.2)
-      letter_opener (~> 1.0)
-      rails (>= 3.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +39,9 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
+    letter_opener_web (1.2.2)
+      letter_opener (~> 1.0)
+      rails (>= 3.2)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -100,7 +95,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  letter_opener_web!
+  letter_opener_web
   puma
   rails (= 4.1.1)
   uglifier (>= 1.3.0)
