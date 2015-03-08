@@ -1,8 +1,6 @@
 class ContactMailer < ActionMailer::Base
-  default from: "from@example.com"
-
-  default :to            => 'admin@letter_opener_web.com',
-          :from          => 'no-reply@letter_opener_web.com'
+  default :to   => 'admin@letter_opener_web.com',
+          :from => 'no-reply@letter_opener_web.com'
 
   def new_message(from, message, attachment)
     @from, @message = from, message
