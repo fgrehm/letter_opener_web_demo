@@ -1,10 +1,13 @@
-PATH
-  remote: ../letter_opener_web
+GIT
+  remote: https://github.com/fgrehm/letter_opener_web.git
+  revision: d8689f32dc74ce9892f2699c5bdae50198f3ff69
+  branch: next
   specs:
     letter_opener_web (2.0.0.pre.beta1)
       actionmailer (>= 5.2)
       letter_opener (~> 1.7)
       railties (>= 5.2)
+      rexml
 
 GEM
   remote: https://rubygems.org/
@@ -138,6 +141,7 @@ GEM
       rake (>= 0.13)
       thor (~> 1.0)
     rake (13.0.6)
+    rexml (3.2.5)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
