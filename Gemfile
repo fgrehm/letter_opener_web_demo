@@ -9,8 +9,7 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
 
 gem 'bootsnap', '>= 1.4.4', require: false
-
-gem 'letter_opener_web', '2.0.0.pre.alpha1'
+gem 'letter_opener_web', '~> 2.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
